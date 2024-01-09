@@ -1,3 +1,21 @@
+@font-face {
+    font-family: myFont;
+    src: url('../fonts/WEBLBB__.TTF')
+  }
+  
+
 .knowledge-page {
     display: flex;
 }
+
+.knowledge-content {
+    margin: 5% 0 0  5%; 
+}
+
+.knowledge-heading {
+
+    font-family: myFont;
+    margin-bottom: 20%;
+
+}
+

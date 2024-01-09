@@ -8,7 +8,7 @@ const SkillsGraph = () => {
         fetch('http://localhost:5000/skills')
             .then(response => response.json())
             .then(data => {
-                // No transformation needed if the data is already in the correct format
+                
                 setSkills(data);
             })
             .catch(error => console.error('Error fetching skills:', error));
@@ -16,12 +16,12 @@ const SkillsGraph = () => {
 
     return (
         <BarChart
-            width={600}
-            height={300}
+            width={800}
+            height={400}
             data={skills}
             layout="vertical"
             margin={{
-                top: 20, right: 30, left: 20, bottom: 5,
+                top: 0, right: 0, left: -50, bottom: 5,
             }}
         >
             <CartesianGrid strokeDasharray="3 3" />

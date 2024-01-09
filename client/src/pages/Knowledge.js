@@ -9,8 +9,8 @@ const Knowledge = () => {
         <div className = 'knowledge-page'>
             <NavBar />
             <div className = 'knowledge-content'>
-            <h1 style={{color: 'black'}}>My Knowledge</h1>
-            <SkillsGraph />
+            <h1 className = 'knowledge-heading'>My Knowledge</h1>
+            <SkillsGraph className = 'skill-graph' />
             </div>
         </div>
     );
